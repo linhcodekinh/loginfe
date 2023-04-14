@@ -1,0 +1,420 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: RobotoSlab-Bold;
+    src: url('../../assets/font/roboto/RobotoSlab-Bold.ttf');
+}
+
+@font-face {
+    font-family: RobotoSlab-Thin;
+    src: url('../../assets/font/roboto/RobotoSlab-Thin.ttf');
+}
+
+@font-face {
+    font-family: RobotoSlab-Light;
+    src: url('../../assets/font/roboto/RobotoSlab-Light.ttf');
+}
+
+@font-face {
+    font-family: RobotoSlab-Regular;
+    src: url('../../assets/font/roboto/RobotoSlab-Regular.ttf');
+}
+
+/*---------------------------------------------*/
+
+input {
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+input::-webkit-input-placeholder {
+    color: #f3f3f3;
+}
+
+input:-moz-placeholder {
+    color: #f3f3f3;
+}
+
+input::-moz-placeholder {
+    color: #f3f3f3;
+}
+
+input:-ms-input-placeholder {
+    color: #f3f3f3;
+}
+
+/*---------------------------------------------*/
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+  [ Utility ]*/
+
+.txt1 {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+}
+
+.txt2 {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.bg1 {
+    background-color: #3b5998
+}
+
+.bg2 {
+    background-color: #1da1f2
+}
+
+.bg3 {
+    background-color: #ea4335
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+  [ login ]*/
+
+.login-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.background{
+    //background-image: url('../../assets/images/bg-quawaco.jpg');
+    background: url('../../assets/images/bg-quawaco.jpg') center top no-repeat;   
+    //background: linear-gradient(to bottom, #f3f3f3af, #0a9decd0), url('../../assets/images/bg-quawaco.jpg') center top no-repeat;   
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.login-wrap {
+    width: 450px;
+    height: 475px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: fixed;
+    background: linear-gradient(to bottom, #f3f3f396, #c0e6f4), center top no-repeat;
+    z-index: 1;
+}
+
+.background1{
+    background-color: #68A4C4;
+    position: fixed;
+    width: 100%;
+    height: 18%;
+    display: flex;
+    flex-wrap: wrap;
+    background-position: center;
+    border-radius: 35% 35% 0 0;
+    bottom: 0;
+}
+
+.background2{
+    background-color: #f3f3f3;
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    border-radius: 37% 37% 0 0;
+}
+
+.content-bottom{
+    position: fixed;
+    margin-bottom: 60px;
+    bottom: 0;
+
+    .text-on-bg{
+        font-family: RobotoSlab-Regular;
+        width: 600px;
+        font-size: 20px;
+        justify-content: center;
+    }
+    
+    .logo1{
+        background: url('../../assets/images/logo1.png') center bottom no-repeat;   
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        justify-content: end;
+        margin-left: 10pxs;
+    }
+}
+.logo2{
+    position: fixed;
+    background: url('../../assets/images/logo2.png') center bottom no-repeat;   
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    right: 0;
+    bottom: 0;
+}
+
+
+.contact-btn{
+    font-family: RobotoSlab-Regular;
+    position: fixed;
+    display: block;
+    border: none;
+    background-color: #1E4356;
+    padding: 5px 20px;
+    border-radius: 3px;
+    color: rgb(243, 243, 243);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    bottom: 0;
+}
+
+
+
+/*------------------------------------------------------------------
+  [ Form ]*/
+
+.login-form {
+    width: 100%;
+}
+
+.login-form-img {
+    background-image: url('../../assets/images/NQN.jpg');
+    display: block;
+    width: 110px;
+    height: 108px;
+    padding: 10px;
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+}
+
+/*------------------------------------------------------------------
+  [ Input ]*/
+
+.input-wrap {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #f3f3f3;
+}
+
+.input-label {
+    font-family: RobotoSlab-Bold;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.5;
+    padding-left: 7px;
+}
+
+.input {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: transparent;
+    padding: 0 7px 0 43px;
+    font-family: RobotoSlab-Regular;
+}
+
+/*---------------------------------------------
+[ Input Focus]*/
+
+.input-focus {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.input-focus::after {
+    content: attr(data-symbol);
+    font-family: Material-Design-Iconic-Font;
+    color: #f3f3f3;
+    font-size: 22px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: calc(100% - 20px);
+    bottom: 0;
+    left: 0;
+    padding-left: 13px;
+    padding-top: 3px;
+}
+
+.input-focus::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #7f7f7f;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.input:focus+.input-focus::before {
+    width: 100%;
+}
+
+.has-val.input+.input-focus::before {
+    width: 100%;
+}
+
+.input:focus+.input-focus::after {
+    color: #a64bf4;
+}
+
+.has-val.input+.input-focus::after {
+    color: #a64bf4;
+}
+
+/*------------------------------------------------------------------
+  [ Button ]*/
+
+.login-container-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login-wrap-form-btn {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -moz-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -webkit-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -o-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -ms-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+}
+
+.login-form-bgbtn {
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    height: 100%;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    top: 0;
+    left: -100%;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.login-form-btn {
+    background-image: url('../../assets/images/bg-01.jpg');
+    font-family: RobotoSlab-Bold;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+}
+
+.login-wrap-form-btn:hover .login-form-bgbtn {
+    left: 0;
+}
+
+.p-l-55 {padding-left: 55px;}
+.p-r-55 {padding-right: 55px;}
+.p-t-40 {padding-top: 40px;}
+.p-b-54 {padding-bottom: 54px;}
+.m-b-23 {margin-bottom: 23px;}
+.p-t-8 {padding-top: 8px;}
+.p-b-31 {padding-bottom: 31px;}
+
+i.far {
+    position: absolute;
+    color: #666666;
+    right: 0;
+    top: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.text-right {
+    text-align: right !important;
+}
